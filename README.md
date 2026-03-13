@@ -103,28 +103,21 @@ Bây giờ viết cho mình một bài blog/thread/newsletter kết hợp insigh
 ```
 Vì Claude đã đọc full transcript của tất cả, nó có thể tìm patterns xuyên suốt, so sánh quan điểm, và tạo content hoàn toàn mới từ nhiều góc nhìn.
 
-### 4. Chuẩn bị trước khi họp
-Sếp gửi một bài viết dài 5,000 từ yêu cầu đọc trước buổi họp:
-```
-extract wisdom (fast) from https://article-url.com
-```
-Nhận 3 sections, 3 bullets mỗi section. Đọc trong 30 giây, đủ context để tham gia thảo luận.
-
-### 5. Research sâu một chủ đề
+### 4. Research sâu một chủ đề
 Đang research về autonomous driving và có 5 videos cần xử lý:
 ```
 extract wisdom (comprehensive) from https://youtube.com/watch?v=video1
 ```
 Mức comprehensive cho 10-15 sections, bao gồm "Themes & Connections" để thấy patterns xuyên suốt nội dung.
 
-### 6. Curate nội dung cho team
+### 5. Curate nội dung cho team
 Muốn chia sẻ một video với team nhưng cần quyết định có đáng share không:
 ```
 extract wisdom (basic) from https://youtube.com/watch?v=...
 ```
 Nếu output đọc xong mà bạn muốn xem video gốc, thì nó đáng share.
 
-### 7. Tóm tắt nhanh trong 1 section
+### 6. Tóm tắt nhanh trong 1 section
 Đồng nghiệp hỏi "video này nói về gì?" và bạn cần trả lời trong 30 giây:
 ```
 extract wisdom (instant) from https://youtube.com/watch?v=...

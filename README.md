@@ -78,47 +78,51 @@ ExtractWisdom/
 
 ## Use Cases
 
-### 1. Xem video dài nhưng không có thời gian
-Bạn thấy một video YouTube 2 tiếng về AI trends. Thay vì xem hết, bạn chạy:
+### 1. Discuss trực tiếp với video
+Vì ExtractWisdom pull full transcript, bạn có thể hỏi tiếp sau khi extract:
 ```
 extract wisdom from https://youtube.com/watch?v=...
 ```
-Nhận được 8-12 sections với những insight hay nhất, quotes đáng nhớ, và danh sách references để tìm hiểu thêm.
+Sau đó hỏi thêm: *"Anh ấy nói gì về pricing strategy?"*, *"Phần nào liên quan đến startup giai đoạn đầu?"*. Claude có toàn bộ transcript nên trả lời được mọi câu hỏi chi tiết về video — như đang nói chuyện với người đã xem video đó.
 
-### 2. Chuẩn bị trước khi họp
-Sếp gửi một bài viết dài 5,000 từ yêu cầu đọc trước buổi họp. Chạy:
+### 2. Reflect — mình áp dụng được gì?
+Extract xong, hỏi Claude:
+```
+Từ những insights trên, mình có thể áp dụng gì cho [dự án/công việc/team] của mình?
+```
+Claude sẽ map các insights từ video vào context cụ thể của bạn. Ví dụ: xem video về cách Rivian quản lý 5,000 người cùng phát triển R2 → hỏi "áp dụng gì cho team 10 người của mình?"
+
+### 3. Kết hợp nhiều nguồn → tạo content mới
+Extract từ 2-3 nguồn khác nhau, rồi yêu cầu Claude tổng hợp:
+```
+extract wisdom from https://youtube.com/watch?v=video1
+extract wisdom from https://youtube.com/watch?v=video2
+extract wisdom from https://blog.com/article
+
+Bây giờ viết cho mình một bài blog/thread/newsletter kết hợp insights từ 3 nguồn trên.
+```
+Vì Claude đã đọc full transcript của tất cả, nó có thể tìm patterns xuyên suốt, so sánh quan điểm, và tạo content hoàn toàn mới từ nhiều góc nhìn.
+
+### 4. Chuẩn bị trước khi họp
+Sếp gửi một bài viết dài 5,000 từ yêu cầu đọc trước buổi họp:
 ```
 extract wisdom (fast) from https://article-url.com
 ```
 Nhận 3 sections, 3 bullets mỗi section. Đọc trong 30 giây, đủ context để tham gia thảo luận.
 
-### 3. Ghi lại podcast đã nghe
-Bạn vừa nghe xong một podcast episode hay nhưng sợ quên. Chạy:
-```
-extract wisdom from https://youtube.com/watch?v=podcast-episode
-```
-Skill sẽ capture những gì bạn nhớ lại và cả những gì bạn có thể đã bỏ lỡ.
-
-### 4. Curate nội dung cho team
-Bạn muốn chia sẻ một video với team nhưng cần quyết định có đáng share không:
-```
-extract wisdom (basic) from https://youtube.com/watch?v=...
-```
-Nếu output đọc xong mà bạn muốn xem video gốc, thì nó đáng share.
-
 ### 5. Research sâu một chủ đề
-Bạn đang research về autonomous driving và có 5 videos cần xử lý:
+Đang research về autonomous driving và có 5 videos cần xử lý:
 ```
 extract wisdom (comprehensive) from https://youtube.com/watch?v=video1
 ```
 Mức comprehensive cho 10-15 sections, bao gồm "Themes & Connections" để thấy patterns xuyên suốt nội dung.
 
-### 6. Phân tích transcript có sẵn
-Bạn có file transcript từ một buổi interview nội bộ:
+### 6. Curate nội dung cho team
+Muốn chia sẻ một video với team nhưng cần quyết định có đáng share không:
 ```
-extract wisdom from /Users/you/Documents/interview-transcript.txt
+extract wisdom (basic) from https://youtube.com/watch?v=...
 ```
-Không cần YouTube hay URL. Đọc file trực tiếp.
+Nếu output đọc xong mà bạn muốn xem video gốc, thì nó đáng share.
 
 ### 7. Tóm tắt nhanh trong 1 section
 Đồng nghiệp hỏi "video này nói về gì?" và bạn cần trả lời trong 30 giây:

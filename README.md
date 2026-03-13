@@ -131,14 +131,17 @@ Nhận 1 section duy nhất với 8 bullets hay nhất.
 
 ## So sánh với các tool khác
 
-| | ExtractWisdom | ChatGPT "summarize" |
-|---|---|---|
-| **Sections** | Dynamic — thay đổi theo nội dung | Không có structure |
-| **Tone** | Conversational, như kể cho bạn nghe | Generic |
-| **Depth levels** | 5 mức | Không có |
-| **Dependencies** | yt-dlp + Bun | Không |
-| **YouTube** | Native tool included | Paste transcript manually |
-| **Input types** | YouTube, URL, file, text | Text only |
+| | ExtractWisdom | Gemini in YouTube | ChatGPT "summarize" |
+|---|---|---|---|
+| **Sections** | Dynamic — thay đổi theo nội dung | Cố định, chỉ tóm tắt chung | Không có structure |
+| **Tone** | Conversational, như kể cho bạn nghe | Neutral, tóm tắt khô khan | Generic |
+| **Depth levels** | 5 mức (Instant → Comprehensive) | 1 mức duy nhất | Không có |
+| **Quotes & takes** | Giữ nguyên quotes hay, contrarian takes | Bỏ qua, chỉ tóm ý chính | Bỏ qua |
+| **Dynamic sections** | Tự tạo sections theo nội dung thực tế | Không — format cố định | Không |
+| **Closing sections** | Takeaway, "2 Minutes", References | Không có | Không có |
+| **Dependencies** | yt-dlp + Bun | Không (built-in YouTube) | Không |
+| **Input types** | YouTube, URL, file, text | Chỉ YouTube | Text only |
+| **Kết quả** | Đọc xong muốn xem video | Đọc xong thấy đủ rồi, skip video | Tóm tắt chung chung |
 
 ---
 

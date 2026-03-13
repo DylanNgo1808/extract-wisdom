@@ -1,5 +1,19 @@
 # ExtractWisdom — Dynamic Content Extraction
 
+## Vấn đề
+
+Một pain point lớn trong việc tiêu thụ nội dung: xem xong một video hay, đọc xong một bài viết dài, rồi... quên. Không biết áp dụng được gì cho công việc của mình. Kiến thức vào rồi ra.
+
+Nhờ AI tóm tắt thì lại gặp vấn đề khác. Gemini trên YouTube hay ChatGPT summarize cho bạn một bản tóm tắt chung chung — đủ để biết video nói về gì, nhưng bỏ sót những phần hay nhất: một câu quote đáng nhớ, một quan điểm ngược dòng, một chi tiết nhỏ mà thực ra mới là thứ đáng mang đi áp dụng.
+
+**ExtractWisdom giải quyết cả hai vấn đề:**
+- Không chỉ tóm tắt mà **lọc ra wisdom** — những insights bất ngờ, quotes hay, contrarian takes mà tóm tắt thông thường bỏ qua
+- Tự tạo sections theo nội dung thực tế (không phải format cố định), nên không bị sót ý quan trọng vì template không có chỗ cho nó
+- Pull full transcript nên sau khi extract, bạn có thể **hỏi tiếp**: "áp dụng gì cho team mình?", "phần nào liên quan đến dự án X?" — biến nội dung thành hành động cụ thể
+- Đọc xong extraction mà **muốn xem video gốc**, chứ không phải thấy "đủ rồi, skip"
+
+---
+
 ## Hướng Dẫn Sử Dụng
 
 ### Yêu cầu cài đặt

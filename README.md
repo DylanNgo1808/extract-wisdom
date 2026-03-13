@@ -53,7 +53,7 @@ extract wisdom from this:
 ```
 Không cần tool nào. Claude xử lý trực tiếp.
 
-#### Bước 3: Chọn độ sâu phân tích
+#### Tuỳ chọn: Độ sâu phân tích (không bắt buộc, mặc định là Full)
 
 | Mức độ | Cách gọi | Số sections | Khi nào dùng |
 |--------|----------|-------------|--------------|
